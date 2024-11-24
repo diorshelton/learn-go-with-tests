@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 const spanish = "Spanish"
+const french = "French"
 const englishHelloPrefix = "Hello, "
 const spanishHelloPrefix = "Hola, "
 const frenchHelloPrefix = "Bonjour, "
@@ -16,7 +17,7 @@ func Hello(name string, language string) string {
 			return spanishHelloPrefix + name
 	}
 
-	if language == "French" {
+	if language == french {
 		return frenchHelloPrefix + name
 	}
 	return englishHelloPrefix + name
